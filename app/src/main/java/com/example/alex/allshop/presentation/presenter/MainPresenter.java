@@ -10,6 +10,5 @@ import com.example.alex.allshop.presentation.view.ViewMainFragment;
 @InjectViewState
 public class MainPresenter extends MvpPresenter<ViewMainFragment> {
     public MainPresenter (){
-        getViewState().getMessage("");
     }
 }
