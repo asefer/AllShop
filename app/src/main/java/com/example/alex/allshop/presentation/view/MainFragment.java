@@ -25,7 +25,6 @@ public class MainFragment extends Fragment implements ViewMainFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_main,container,false);
-        TextView textView=(TextView) view.findViewById(R.id.tv_test);
         return view;
     }
 
