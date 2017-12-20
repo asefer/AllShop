@@ -4,12 +4,17 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
 
+import com.example.alex.allshop.App;
 import com.example.alex.allshop.R;
 import com.example.alex.allshop.presentation.view.mainFragment.MainFragment;
 
 public class MainActivity extends AppCompatActivity implements ViewMainActivity{
+
 
 
     private MainFragment mainFragment;
@@ -19,11 +24,16 @@ public class MainActivity extends AppCompatActivity implements ViewMainActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        ActionBar actionBar=getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
         if (mainFragment==null){
             mainFragment=new MainFragment();
         }
 
         addFragment(R.id.fragment_container,mainFragment,"MainFragment");
+        App.getComponent().inject(this);
     }
 
     private void addFragment( int containerViewId,
@@ -47,6 +57,14 @@ public class MainActivity extends AppCompatActivity implements ViewMainActivity{
                 .commit();
     }
 
+    private void showView(View view){
+        view.setVisibility(View.VISIBLE);
+    }
+
+
+    private void hideView(View view){
+        view.setVisibility(View.GONE);
+    }
 }
 
 
