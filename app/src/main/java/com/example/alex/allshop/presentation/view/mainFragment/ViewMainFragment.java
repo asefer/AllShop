@@ -1,4 +1,4 @@
-package com.example.alex.allshop.presentation.view;
+package com.example.alex.allshop.presentation.view.mainFragment;
 
 import com.arellomobile.mvp.MvpView;
 import com.arellomobile.mvp.viewstate.strategy.AddToEndSingleStrategy;

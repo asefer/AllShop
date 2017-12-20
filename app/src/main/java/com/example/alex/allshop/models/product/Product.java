@@ -32,4 +32,5 @@ public class Product {
     public void setSpecification(String specification) {
         this.specification = specification;
     }
+
 }
