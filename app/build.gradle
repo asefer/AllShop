@@ -44,4 +44,7 @@ dependencies {
 
 //Если мы собираемся использовать support библиотеку
     compile 'com.google.dagger:dagger-android-support:2.11'
+
+    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.0.5'
 }

@@ -20,6 +20,11 @@ import com.example.alex.allshop.presentation.adapter.MainMenuAdapter;
 
 import javax.inject.Inject;
 
+import io.reactivex.Observable;
+import io.reactivex.ObservableEmitter;
+import io.reactivex.ObservableOnSubscribe;
+import io.reactivex.Single;
+
 /**
  * Created by alex on 12.12.17.
  */
@@ -49,6 +54,10 @@ public class MainFragment extends Fragment implements ViewMainFragment {
 
         mainMenuAdapter=new MainMenuAdapter(this.menuItem);
         mainMenu.setAdapter(mainMenuAdapter);
+
+
+
+
         return view;
     }
 
