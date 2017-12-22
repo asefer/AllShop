@@ -3,19 +3,19 @@ package com.example.alex.allshop.models.product;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Backet {
+public class Basket {
 
-    private static Backet instance;
+    private static Basket instance;
     private static List<Product> products;
 
-    private  Backet(){
+    private Basket(){
         if (products==null)
         products=new ArrayList<>();
     }
 
-    public static Backet getInstance(){
+    public static Basket getInstance(){
         if (instance==null){
-            instance=new Backet();
+            instance=new Basket();
         }
         return instance;
     }

@@ -61,10 +61,7 @@ public class MainActivity extends AppCompatActivity implements ViewMainActivity{
         view.setVisibility(View.VISIBLE);
     }
 
-
     private void hideView(View view){
         view.setVisibility(View.GONE);
     }
 }
-
-

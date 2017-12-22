@@ -5,4 +5,5 @@ import com.example.alex.allshop.models.product.Product;
 
 public interface ViewCatalogFragment extends MvpView {
     void addProductoToBasket(Product product);
+
 }

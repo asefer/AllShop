@@ -10,14 +10,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-
         </android.support.design.widget.AppBarLayout>
+
         <FrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/fragment_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
 
         </FrameLayout>
-
 </android.support.constraint.ConstraintLayout>
